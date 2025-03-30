@@ -1,6 +1,5 @@
-export const api = "https://reactgram-kb58.onrender.com/api";  // URL do backend no Render
-export const uploads = "https://reactgram-kb58.onrender.com/uploads";  // URL de uploads, se necessário
-
+export const api = "https://reactgram-kb58.onrender.com/api"
+export const uploads = "https://reactgram-kb58.onrender.com/uploads"
 export const requestConfig = (method, data, token = null, image = null) => {
     let config
 
