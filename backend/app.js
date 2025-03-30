@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 // Solve CORS
-app.use(cors({ credentials: true, origin: ['http://localhost:3000', 'http://localhost:5173', 'https://igorcalbo.github.io'] }))
+app.use(cors({ origin: "*" }))
 
 // Upload directory
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")))
