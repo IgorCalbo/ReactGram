@@ -7,19 +7,20 @@ export const requestConfig = (method, data, token = null, image = null) => {
         config = {
             method, 
             body: data,
-            headers: {}
+            headers: {'Access-Control-Allow-Origin' : '*'}
         }
     } else if (method === "DELETE" || data === null) {
         config = {
             method, 
-            headers: {}
+            headers: {'Access-Control-Allow-Origin' : '*'}
         }
     } else {
         config = {
             method,
             body: JSON.stringify(data),
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                'Access-Control-Allow-Origin' : '*'
             }
         }
     }
